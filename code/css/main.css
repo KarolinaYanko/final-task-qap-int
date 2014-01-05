@@ -1,0 +1,29 @@
+*{
+	-webkit-user-drag: none;
+	-webkit-user-select: none;
+	-webkit-tap-highlight-color: transparent;
+}
+#presentation{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 1024px;
+	height: 768px;
+	background: url("../../content/img/main-bg.jpg") no-repeat;
+	background-size: 100% 100%;
+	/*overflow: hidden;*/
+}
+#main-menu{
+	position: absolute;
+	top: 100%;
+	width: 1024px;
+	height: 150px;
+	background-color: #00226c;
+}
+.logo{
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 259px;
+	height: 155px;
+}
