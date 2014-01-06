@@ -1,0 +1,156 @@
+.graph{
+	-webkit-transform: translate3d(0, 0, 0);
+	position: relative;
+}
+.g-caption{
+	position: absolute;
+	right: 0;
+	bottom: 100%;
+	left: 0;
+	text-align: center;
+	font-weight: bold;
+}
+.g-scale-v{
+	position: absolute;
+	top: 0;
+	right: 100%;
+	bottom: 0;
+}
+.g-scale-v.g-border{
+	border-right-style: solid;
+}
+.g-scale-h.g-border{
+	border-top-style: solid;
+}
+.g-scale-v ul{
+	display: -webkit-box;
+	-webkit-box-sizing: border-box;
+	height: 100%;
+	list-style: none;
+	-webkit-box-direction: reverse;
+	-webkit-box-orient: vertical;
+	-webkit-box-pack: justify;
+}
+.g-scale-h{
+	position: absolute;
+	top: 100%;
+	right: 0;
+	left: 0;
+}
+.g-scale-h ul{
+	display: -webkit-box;
+	-webkit-box-sizing: border-box;
+	width: 100%;
+	list-style: none;
+	-webkit-box-pack: justify;
+}
+.g-scale-h li,
+.g-scale-v li{
+	position: relative;
+}
+.g-scale-v li{
+	text-align: right;
+}
+.g-scale-h li{
+	text-align: center;
+}
+.g-stroke li:after{
+	position: absolute;
+	display: block;
+	content: "";
+}
+.g-scale-v .g-stroke li:after{
+	top: 50%;
+	right: 0%;
+}
+.g-scale-h .g-stroke li:after{
+	top: 0%;
+	left: 50%;
+}
+.g-scale-label{
+	position: absolute;
+	text-align: center;
+}
+.g-scale-v .g-scale-label{
+	top: 0;
+	right: 100%;
+	-webkit-transform: rotate(-90deg);
+	-webkit-transform-origin: 100% 0;
+}
+.g-scale-h .g-scale-label{
+	top: 100%;
+	right: 0;
+	left: 0;
+}
+.g-bargroup{
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	display: -webkit-box;
+	-webkit-box-pack: justify;
+	-webkit-box-align: end;
+	-webkit-transform: translate3d(0, 0, 0);
+}
+.g-bar-nest{
+	position: relative;
+	display: -webkit-box;
+	-webkit-box-pack: justify;
+	-webkit-box-align: end;
+	-webkit-transform: translate3d(0, 0, 0);
+}
+.g-bar{
+	position: relative;
+	-webkit-transform: translate3d(0, 0, 0);
+}
+.g-bar-value{
+	position: absolute;
+	bottom: 100%;
+	width: 100%;
+	text-align: center;
+	-webkit-transform: translate3d(0, 0, 0);
+}
+.g-bar-additional{
+	position: absolute;
+}
+.g-nest-name{
+	position: absolute;
+	top: 100%;
+	right: 0;
+	left: 0;
+	text-align: center;
+	-webkit-transform: translate3d(0, 0, 0);
+}
+.g-nest-additional{
+	position: absolute;
+}
+.g-legend{
+	position: absolute;
+	list-style: none;
+}
+.g-legend.g-square li:before{
+	float: left;
+	content: "";
+}
+.g-additional{
+	position: absolute;
+}
+.g-3d .g-bar:before{
+	position: absolute;
+	bottom: 100%;
+	left: 0;
+	display: block;
+	width: 100%;
+	content: "";
+	-webkit-transform-origin: 0% 100%;
+}
+.g-3d .g-bar:after{
+	position: absolute;
+	top: 0;
+	left: 100%;
+	display: block;
+	height: 100%;
+	content: "";
+	-webkit-transform-origin: 0% 0%;
+}

@@ -1,0 +1,68 @@
+#sugar_diabet{
+	background: url('../../content/img/sugar_diabet/bg.png') 69px 141px no-repeat;
+	background-size: 650px;
+}
+.popup{
+	display: -webkit-box;
+	-webkit-box-align: center;
+	-webkit-box-pack: center;
+	float: left;
+	width: 190px;
+	height: 75px;
+	margin: 250px 0 0 120px;
+	padding: 5px 30px;
+	background-color: rgba(195, 222, 251, 0.65);
+	border-radius: 10px;
+	border: 2px solid #f6fafe;
+	text-align: center;
+	font-size: 21px;
+}
+strong{
+	font-size: 29px;
+}
+#sugar_diabet .graph-hold{
+	float: right;
+	position: relative;
+	margin: 116px 139px 0 0;
+	width: 345px;
+	height: 300px;
+}
+#sugar_diabet .graph{
+	width: 343px;
+	height: 303px;
+}
+#sugar_diabet .g-scale-v ul{
+	right: 35px;
+	top: 14px;
+	height: 317px;
+}
+#sugar_diabet .g-scale-v .g-scale-label{
+	right: 105px;
+	font-size: 18px;
+	width: 329px;
+}
+#sugar_diabet .g-scale-h ul{
+	top: 21px;
+	font-size: 19px;
+	left: -27px;
+}
+#sugar_diabet .g-scale-h li{
+	width: 174px;
+}
+#sugar_diabet .g-bargroup{
+	margin: 0 77px -10px 44px;
+	z-index: 2;
+}
+#sugar_diabet .g-bar{
+	width: 52px;
+	height: 0;
+}
+#sugar_diabet.animated .g-bar.type-1{
+	height: 156px;
+}
+#sugar_diabet.animated .g-bar.type-2{
+	height: 246px;
+}
+#sugar_diabet.animated .g-bar{
+	-webkit-transition: 1s;
+}

@@ -1,5 +1,7 @@
 @import "code/css/reset.css";
 @import "code/css/main.css";
+@import "code/css/fonts.css";
+@import "code/css/graph.css";
 /* slides */
 @import "code/css/sugar_diabet.css";
 @import "code/css/the_prevalence_of_diabetes.css";
