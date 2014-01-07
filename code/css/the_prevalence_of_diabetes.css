@@ -3,17 +3,24 @@
 	background-size: 911px 517px;
 }
 #the_prevalence_of_diabetes .ukraine{
-	margin: 80px 0 0 227px;
+	position: relative;
+	margin: 81px 0 0 226px;
 	width: 684px;
 	height: 429px;
 	background: url('../../content/img/the_prevalence_of_diabetes/ukraine.png')  no-repeat;
 	background-size: 100% 100%;
 	color: white;
 	font-weight: bold;
-	-webkit-transform: translate3d(116px, -26px, 0) scale(0.38);
+	overflow: hidden;
+	-webkit-transform: translate3d(117px, -26px, 0) scale(0.38);
 }
 #the_prevalence_of_diabetes .ukraine > *{
-	display: none;
+	position: absolute;
+	color: white;
+	font-size: 24px;
+	font-weight: bold;
+	text-shadow: 1px 2px black;
+	opacity: 0;
 }
 #the_prevalence_of_diabetes .note{
 	display: -webkit-box;
@@ -26,7 +33,14 @@
 	height: 144px;
 	font-size: 23px;
 	background: rgba(224, 234, 252, 0.88);
-	border-radius: 10px;
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+	opacity: 0;
+}
+#the_prevalence_of_diabetes.animated .note{
+	-webkit-transform: translate3d(0, 0, 0);
+	-webkit-transition: 500ms 3500ms;
+	opacity: 1;
 }
 #the_prevalence_of_diabetes .note:after,
 #the_prevalence_of_diabetes .note:before{
@@ -34,24 +48,62 @@
 	content: '';
 }
 #the_prevalence_of_diabetes .note:after{
-    top: 61px;
-    left: -43px;
-    /* width: 11px; */
-    /* height: 21px; */
-    border: 12px solid transparent;
-    border-right: 12px solid #e73650;
+	top: 61px;
+	left: -43px;
+	border: 12px solid transparent;
+	border-right: 12px solid #e73650;
 }
 #the_prevalence_of_diabetes .note:before{
-    top: 0;
-    left: -19px;
-    width: 18px;
-    height: 100%;
-    background: -webkit-linear-gradient(#fe5871, #cf122e);
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
+	top: 0;
+	left: -19px;
+	width: 18px;
+	height: 100%;
+	background: -webkit-linear-gradient(#fe5871, #cf122e);
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
 }
 #the_prevalence_of_diabetes.animated .ukraine{
 	-webkit-transition-duration: 2000ms;
 	-webkit-transition-delay: 400ms;
-	-webkit-transform: translate3d(0, 0, 0) scale(1);
+	/* -webkit-transform: translate3d(0, 0, 0) scale(1); */
+}
+#the_prevalence_of_diabetes .in-ukraine{
+	top: 95px;
+	left: 98px;
+	-webkit-transform: translate3d(-400px, 0, 0);
+}
+#the_prevalence_of_diabetes .number{
+	top: 130px;
+	left: 181px;
+	font-size: 70px;
+	color: #ffd956;
+	-webkit-transform: translate3d(-400px, 0, 0);
+}
+#the_prevalence_of_diabetes .red-mark{
+	top: 217px;
+	left: 369px;
+	-webkit-transform: translate3d(-400px, 0, 0);
+}
+#the_prevalence_of_diabetes .red-mark span{
+	position: absolute;
+	top: 0;
+	right: -60px;
+	width: 310px;
+	height: 30px;
+	background: #ce112d;
+	z-index: -1;
+	-webkit-transform: translate3d(400px, 0, 0) skewX(-20deg);
+	opacity: 0;
+}
+#the_prevalence_of_diabetes.animated .in-ukraine,
+#the_prevalence_of_diabetes.animated .number,
+#the_prevalence_of_diabetes.animated .red-mark{
+	-webkit-transform: translate3d(0, 0, 0);
+	-webkit-transition: 800ms 2200ms;
+	opacity: 1;
+}
+#the_prevalence_of_diabetes.animated .red-mark span{
+	-webkit-transition: 500ms 3000ms;
+	-webkit-transform: translate3d(0, 0, 0) skewX(-20deg);
+	opacity: 1;
 }
