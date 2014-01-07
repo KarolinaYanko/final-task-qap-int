@@ -218,11 +218,6 @@ strong{
 	-webkit-transform: scaleY(0);
 	-webkit-transform-origin: 0 100%;
 }
-animated .g-bar{
-	-webkit-transition-duration: 800ms;
-	-webkit-transition-delay: 200ms;
-	-webkit-transform: scaleY(1);
-}
 .g-bar::before,
 .g-bar::after{
 	content: '';
@@ -307,25 +302,4 @@ animated .g-bar{
 }
 .type-2 .g-bar-value.circle::before{
 	background: #f7e3e6;
-}
-.legend{
-	position: absolute;
-}
-.legend li{
-	position: relative;
-	float: left;
-	color: #2880b2;
-	margin-right: 35px;
-	font-size: 15px;
-	-webkit-transform: translate3d(0, 0, 0);
-}
-.legend li::before{
-	content: "";
-	position: absolute;
-	width: 12px;
-	height: 12px;
-	left: -18px;
-	top: 3px;
-	border-radius: 50%;
-	border: 1px solid white;
 }
