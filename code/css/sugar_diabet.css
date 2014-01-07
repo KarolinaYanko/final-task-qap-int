@@ -1,7 +1,6 @@
 #sugar_diabet{
 	background: url('../../content/img/sugar_diabet/bg.png') 69px 141px no-repeat;
 	background-size: 650px;
-	display: none;
 }
 #sugar_diabet .popup{
 	display: -webkit-box;

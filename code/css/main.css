@@ -51,11 +51,16 @@ strong{
 #main-menu{
 	display: -webkit-box;
 	position: absolute;
-	top: 100%;
+	top: 768px;
 	width: 898px;
 	height: 120px;
 	padding: 16px 63px;
 	background-color: #00226c;
+	-webkit-transform: translate3d(0, 0, 0);
+}
+#menu-open.active{
+	-webkit-transform: translate3d(0, -120px, 0);
+	-webkit:transition: 500ms;
 }
 .menu-open{
 	position: absolute;
@@ -68,7 +73,18 @@ strong{
 	width: 160px;
 	height: 120px;
 	margin-right: 23px;
-	background: rgba(0, 0, 0, 0.22);
+}
+.menu-thumb:nth-of-type(2){
+	background: url('../../content/img/thumbs/sugar_diabet.jpg') no-repeat;
+	background-size: 100% 100%;
+}
+.menu-thumb:nth-of-type(3){
+	background: url('../../content/img/thumbs/the_prevalence_of_diabetes.jpg') no-repeat;
+	background-size: 100% 100%;
+}
+.menu-thumb:last-of-type{
+	background: url('../../content/img/thumbs/tablets.jpg') no-repeat;
+	background-size: 100% 100%;
 }
 .logo{
 	position: absolute;
