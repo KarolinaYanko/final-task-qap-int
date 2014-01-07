@@ -1,12 +1,13 @@
 #the_prevalence_of_diabetes{
 	background: url('../../content/img/the_prevalence_of_diabetes/map.png') 53px 155px no-repeat;
 	background-size: 911px 517px;
+	display: none;
 }
 #the_prevalence_of_diabetes .ukraine{
 	position: relative;
 	margin: 81px 0 0 226px;
 	width: 684px;
-	height: 429px;
+	height: 430px;
 	background: url('../../content/img/the_prevalence_of_diabetes/ukraine.png')  no-repeat;
 	background-size: 100% 100%;
 	color: white;
@@ -65,7 +66,7 @@
 #the_prevalence_of_diabetes.animated .ukraine{
 	-webkit-transition-duration: 2000ms;
 	-webkit-transition-delay: 400ms;
-	/* -webkit-transform: translate3d(0, 0, 0) scale(1); */
+	-webkit-transform: translate3d(0, 0, 0) scale(1);
 }
 #the_prevalence_of_diabetes .in-ukraine{
 	top: 95px;

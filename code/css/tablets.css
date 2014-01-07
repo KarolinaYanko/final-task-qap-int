@@ -1,0 +1,107 @@
+#tablets .tablet-left{
+	float: left;
+	margin: 105px 0 0 124px;  width: 237px;  height: 254px;
+	background: url('../../content/img/tablets/tablet-left.png') no-repeat;
+	background-size: 100%;
+}
+#tablets .tablet-right{
+	float: right;
+	margin: 93px 126px 0 0;
+	width: 237px;
+	height: 254px;
+	background: url('../../content/img/tablets/tablet-right.png') no-repeat;
+	background-size: 100%;
+}
+#tablets .lines{
+	position: relative;
+	margin: 92px 0 0 274px;
+	width: 467px;
+	height: 207px;
+}
+#tablets .additional{
+	position: absolute;
+	font-weight: bold;
+	font-size: 17px;
+	text-align: center;
+}
+#tablets .additional:first-of-type{
+	top: 4px;
+	left: 123px;
+	color: #f19607;
+}
+#tablets .additional:nth-of-type(2){
+	top: 101px;
+	left: 146px;
+	color: #f53f36;
+}
+#tablets .additional:last-of-type{
+	bottom: 8px;
+	left: 150px;
+}
+#tablets .line{
+	position: absolute;
+}
+#tablets .line:first-of-type{
+	top: 44px;
+	left: 0;
+	width: 472px;
+	height: 89px;
+	background: url('../../content/img/tablets/line-1.png') no-repeat;
+	background-size: 100% 100%;
+}
+#tablets .line:nth-of-type(2){
+	top: 116px;
+	left: 19px;
+	width: 404px;
+	height: 14px;
+	background: url('../../content/img/tablets/line-2.png') no-repeat;
+	background-size: 100% 100%;
+}
+#tablets .line:last-of-type{
+	bottom: 3px;
+	left: 29px;
+	width: 316px;
+	height: 49px;
+	background: url('../../content/img/tablets/line-3.png') no-repeat;
+	background-size: 100% 100%;
+}
+#tablets .result{
+	display: -webkit-box;
+	-webkit-box-align: center;
+	position: absolute;
+	bottom: 120px;
+	width: 269px;
+	height: 158px;
+	padding: 0 37px;
+	background: #feffff;
+	font-size: 20px;
+	border: 1px solid #1c74bf;
+	border-radius: 10px;
+}
+#tablets .result:first-of-type{
+	left: 65px;
+}
+#tablets .result:last-of-type{
+	right: 65px;
+}
+#tablets .result:before,
+#tablets .result:first-of-type:after{
+	position: absolute;
+	content: '';
+}
+#tablets .result:before{
+    top: 8px;
+    left: 5px;
+    bottom: 8px;
+    right: 5px;
+    border: 2px solid #ebf2f9;
+    border-radius: 10px;
+}
+#tablets .result:first-of-type:after{
+	top: 20px;
+	right: -131px;
+	width: 52px;
+	height: 119px;
+	background: url('../../content/img/tablets/arrow.png') no-repeat;
+	background-size: 100% 100%;
+}
