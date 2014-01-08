@@ -57,12 +57,12 @@ strong{
 	width: 52px;
 	height: 0;
 }
-#sugar_diabet.animated .g-bar.type-1{
+#presentation.first #sugar_diabet .g-bar.type-1{
 	height: 156px;
 }
-#sugar_diabet.animated .g-bar.type-2{
+#presentation.first #sugar_diabet .g-bar.type-2{
 	height: 246px;
 }
-#sugar_diabet.animated .g-bar{
+#presentation.first #sugar_diabet .g-bar{
 	-webkit-transition: 1s;
 }

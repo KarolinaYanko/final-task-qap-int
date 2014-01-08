@@ -145,64 +145,64 @@
 	background-size: 100% 100%;
 }
 /* animation */
-#tablets.animated > *{
+#presentation.third #tablets > *{
 	opacity: 1;
 }
-#tablets.animated .tablet-left{
+#presentation.third #tablets .tablet-left{
 	-webkit-transition-delay: 300ms;
 	-webkit-transition-duration: 400ms;
 }
-#tablets.animated .tablet-right{
+#presentation.third #tablets .tablet-right{
 	-webkit-transition-delay: 700ms;
 }
-#tablets.animated .line{
+#presentation.third #tablets .line{
 	-webkit-transition: 1s;
 }
-#tablets.animated .line:first-of-type{
+#presentation.third #tablets .line:first-of-type{
 	width: 472px;
 	-webkit-transition-delay: 2100ms;
 }
-#tablets.animated .line:nth-of-type(2){
+#presentation.third #tablets .line:nth-of-type(2){
 	width: 404px;
 	-webkit-transition-delay: 3100ms;
 }
-#tablets.animated .line:last-of-type{
+#presentation.third #tablets .line:last-of-type{
 	width: 316px;
 	-webkit-transition-delay: 4100ms;
 }
-#tablets.animated .additional{
+#presentation.third #tablets .additional{
 	-webkit-transition: opacity 500ms;
 	opacity: 1;
 }
-#tablets.animated .additional:first-of-type{
+#presentation.third #tablets .additional:first-of-type{
 	-webkit-transition-delay: 2600ms;
 }
-#tablets.animated .additional:nth-of-type(2){
+#presentation.third #tablets .additional:nth-of-type(2){
 	-webkit-transition-delay: 3600ms;
 }
-#tablets.animated .tablet-left > *{
+#presentation.third #tablets .tablet-left > *{
 	-webkit-transition: opacity 700ms;
 	opacity: 1;
 }
-#tablets.animated .additional:last-of-type{
+#presentation.third #tablets .additional:last-of-type{
 	-webkit-transition-delay: 5300ms;
 }
-#tablets.animated .step-1{
+#presentation.third #tablets .step-1{
 	-webkit-transition-delay: 6000ms;
 }
-#tablets.animated .step-2{
+#presentation.third #tablets .step-2{
 	-webkit-transition-delay: 6700ms;
 }
-#tablets.animated .step-3{
+#presentation.third #tablets .step-3{
 	-webkit-transition-delay: 7400ms;
 }
-#tablets.animated .step-4{
+#presentation.third #tablets .step-4{
 	-webkit-transition-delay: 8100ms;
 }
-#tablets.animated .step-5{
+#presentation.third #tablets .step-5{
 	-webkit-transition-delay: 8800ms;
 }
-#tablets.animated .result{
+#presentation.third #tablets .result{
 	-webkit-transform: translate3d(0, 0 ,0);
 	-webkit-transition: 1s 9500ms;
 }

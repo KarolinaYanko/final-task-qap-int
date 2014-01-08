@@ -57,14 +57,15 @@ strong{
 	padding: 16px 63px;
 	background-color: #00226c;
 	-webkit-transform: translate3d(0, 0, 0);
+	z-index: 3;
 }
 #main-menu.active{
 	-webkit-transform: translate3d(0, -153px, 0);
 	-webkit-transition: 300ms;
 }
-#main-menu.active .menu-open{
+/*#main-menu.active .menu-open{
 	bottom: 0;
-}
+}*/
 .menu-open{
 	position: absolute;
 	bottom: 100%;
@@ -76,16 +77,17 @@ strong{
 	width: 160px;
 	height: 120px;
 	margin-right: 23px;
+	opacity: 0.7;
 }
-.menu-thumb:nth-of-type(2){
+.menu-thumb:nth-of-type(1){
 	background: url('../../content/img/thumbs/sugar_diabet.jpg') no-repeat;
 	background-size: 100% 100%;
 }
-.menu-thumb:nth-of-type(3){
+.menu-thumb:nth-of-type(2){
 	background: url('../../content/img/thumbs/the_prevalence_of_diabetes.jpg') no-repeat;
 	background-size: 100% 100%;
 }
-.menu-thumb:last-of-type{
+.menu-thumb:nth-of-type(3){
 	background: url('../../content/img/thumbs/tablets.jpg') no-repeat;
 	background-size: 100% 100%;
 }
@@ -104,6 +106,7 @@ strong{
 	bottom: 19px;
 	margin-left: -12px;
 	height: 13px;
+	z-index: 2;
 }
 #indicators input{
 	width: 8px;
@@ -122,19 +125,31 @@ strong{
 .slideWrap{
 	width: 3072px;
 	display: -webkit-box;
-	/*-webkit-transform: translate3d(0, 0, 0);*/
+	-webkit-transform: translate3d(0, 0, 0);
 }
-.slideWrap.second{
+#presentation.first .slideWrap{
+	 -webkit-transform: translate3d(0, 0, 0);
+}
+#presentation.first .menu-thumb:nth-of-type(1),
+#presentation.second .menu-thumb:nth-of-type(2),
+#presentation.third .menu-thumb:nth-of-type(3){
+	opacity: 1;
+}
+#presentation.second .slideWrap{
 	 -webkit-transform: translate3d(-1024px, 0, 0);
-	 -webkit-transition: 1s;
+}
+#presentation.third .slideWrap{
+	 -webkit-transform: translate3d(-2048px, 0, 0);
 }
 .slide {
+	position: relative;
 	width: 1024px;
 	height: 768px;
 	padding: 1px;
 	color: #ff2e2e;
 	font-family: PTSans;
 	box-sizing: border-box;
+	z-index: 1;
 }
 h1{
 	margin: 64px 0 0 59px;
