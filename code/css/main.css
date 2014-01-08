@@ -46,7 +46,7 @@ strong{
 	height: 768px;
 	background: url("../../content/img/main-bg.jpg") no-repeat;
 	background-size: 100% 100%;
-	/*overflow: hidden;*/
+	overflow: hidden;
 }
 #main-menu{
 	display: -webkit-box;
@@ -58,9 +58,12 @@ strong{
 	background-color: #00226c;
 	-webkit-transform: translate3d(0, 0, 0);
 }
-#menu-open.active{
-	-webkit-transform: translate3d(0, -120px, 0);
-	-webkit:transition: 500ms;
+#main-menu.active{
+	-webkit-transform: translate3d(0, -153px, 0);
+	-webkit-transition: 300ms;
+}
+#main-menu.active .menu-open{
+	bottom: 0;
 }
 .menu-open{
 	position: absolute;
@@ -115,6 +118,10 @@ strong{
 	background: -webkit-linear-gradient(#feb921, #d11f35);
 	box-shadow: none;
 	border: 1px solid #e7eaf8;
+}
+.slideWrap{
+	width: 1024px;
+	display: -webkit-box;
 }
 .slide {
 	width: 1024px;
