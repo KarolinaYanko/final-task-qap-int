@@ -37,11 +37,6 @@
 	border-bottom-right-radius: 10px;
 	opacity: 0;
 }
-#the_prevalence_of_diabetes.animated .note{
-	-webkit-transform: translate3d(0, 0, 0);
-	-webkit-transition: 500ms 3500ms;
-	opacity: 1;
-}
 #the_prevalence_of_diabetes .note:after,
 #the_prevalence_of_diabetes .note:before{
 	position:absolute;
@@ -105,5 +100,11 @@
 #the_prevalence_of_diabetes.animated .red-mark span{
 	-webkit-transition: 500ms 3000ms;
 	-webkit-transform: translate3d(0, 0, 0) skewX(-20deg);
+	opacity: 1;
+}
+#the_prevalence_of_diabetes.animated .note{
+	-webkit-transform: translate3d(0, 0, 0);
+	-webkit-transition: 500ms 3500ms;
+	z-index: 2;
 	opacity: 1;
 }

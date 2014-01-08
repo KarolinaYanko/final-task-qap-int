@@ -120,8 +120,13 @@ strong{
 	border: 1px solid #e7eaf8;
 }
 .slideWrap{
-	width: 1024px;
+	width: 3072px;
 	display: -webkit-box;
+	/*-webkit-transform: translate3d(0, 0, 0);*/
+}
+.slideWrap.second{
+	 -webkit-transform: translate3d(-1024px, 0, 0);
+	 -webkit-transition: 1s;
 }
 .slide {
 	width: 1024px;
